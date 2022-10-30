@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c754d55d-e62a-49ef-95cb-571df3b8878e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/file_reader.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/file_reader.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/lab1_2.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../lab_2/Task2/.idea/artifacts/Task2_jar5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../lab_2/Task2/.idea/artifacts/Task2_jar6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../lab_2/Task2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../lab_3/Task1/Task1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../lab_3/Task2/Task2/Task2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../hatsukevich/lab1_2/lab1_2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/Xonix_Qt-Cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/Xonix_Qt-Cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/enemy.h.0E16E2AAA48F0AC0.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/enemy.h.0E16E2AAA48F0AC0.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/game.cpp.42ECB8B12B219F14.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/game.cpp.42ECB8B12B219F14.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/game.h.439D1311CAD9588E.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/game.h.439D1311CAD9588E.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/gamescene.cpp.38A137E73E777C56.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/gamescene.cpp.38A137E73E777C56.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/gamescene.h.1DB901ACB94BBF29.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/gamescene.h.1DB901ACB94BBF29.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/view.cpp.DA07D901BA92BE57.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/.cache/clangd/index/view.cpp.DA07D901BA92BE57.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qtc_clangd/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/Xonix.app/Contents/MacOS/Xonix" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/Xonix.app/Contents/MacOS/Xonix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/game.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/game.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/gamescene.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/gamescene.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/moc_gamescene.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/moc_gamescene.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/qrc_resource.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/qrc_resource.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/qrc_resource.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/qrc_resource.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/view.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/view.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Main/out/production/Main/Tasks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Main/src/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Main/src/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Main/task1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Main/task1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Task2/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Task2/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Task2/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Task2/2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Task2/3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Task2/3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Task2/out/production/Task2/Task2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Task2/out/production/Task2/Task2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Task2/script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Task2/script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../lab_2/Task2/src/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../lab_2/Task2/src/Task2.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2GikzZbmURs4VK7AtDBNOsq5JwQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c754d55d-e62a-49ef-95cb-571df3b8878e" name="Changes" comment="" />
+      <created>1666879058732</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666879058732</updated>
+      <workItem from="1666879059782" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
