@@ -55,15 +55,19 @@ OBJECTS_DIR   = ./
 SOURCES       = ../Xonix_Qt-Cpp/game.cpp \
 		../Xonix_Qt-Cpp/gamescene.cpp \
 		../Xonix_Qt-Cpp/main.cpp \
+		../Xonix_Qt-Cpp/menuscene.cpp \
 		../Xonix_Qt-Cpp/view.cpp qrc_resource.cpp \
 		moc_gamescene.cpp \
+		moc_menuscene.cpp \
 		moc_view.cpp
 OBJECTS       = game.o \
 		gamescene.o \
 		main.o \
+		menuscene.o \
 		view.o \
 		qrc_resource.o \
 		moc_gamescene.o \
+		moc_menuscene.o \
 		moc_view.o
 DIST          = ../../../../Qt/6.3.1/macos/mkspecs/features/spec_pre.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/device_config.prf \
@@ -183,6 +187,7 @@ DIST          = ../../../../Qt/6.3.1/macos/mkspecs/features/spec_pre.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/qt_config.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/spec_post.prf \
+		../Xonix_Qt-Cpp/.qmake.stash \
 		../../../../Qt/6.3.1/macos/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/mac/sdk.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/toolchain.prf \
@@ -214,9 +219,11 @@ DIST          = ../../../../Qt/6.3.1/macos/mkspecs/features/spec_pre.prf \
 		../Xonix_Qt-Cpp/Xonix.pro ../Xonix_Qt-Cpp/enemy.h \
 		../Xonix_Qt-Cpp/game.h \
 		../Xonix_Qt-Cpp/gamescene.h \
+		../Xonix_Qt-Cpp/menuscene.h \
 		../Xonix_Qt-Cpp/view.h ../Xonix_Qt-Cpp/game.cpp \
 		../Xonix_Qt-Cpp/gamescene.cpp \
 		../Xonix_Qt-Cpp/main.cpp \
+		../Xonix_Qt-Cpp/menuscene.cpp \
 		../Xonix_Qt-Cpp/view.cpp
 QMAKE_TARGET  = Xonix
 DESTDIR       = 
@@ -226,7 +233,7 @@ TARGET        = Xonix.app/Contents/MacOS/Xonix
 EXPORT_QMAKE_MAC_SDK = macosx
 EXPORT_QMAKE_MAC_SDK_VERSION = 12.3
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Applications/Xcode.app/Contents/Developer
-EXPORT__QMAKE_STASH_ = 
+EXPORT__QMAKE_STASH_ = /Users/ottis/university_3_1/qt_bulei/lab_1_2/build-Xonix-Qt_6_3_1_for_macOS-Debug/.qmake.stash
 EXPORT_VALID_ARCHS = x86_64 arm64
 EXPORT_DEFAULT_ARCHS = arm64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
@@ -360,6 +367,7 @@ Makefile: ../Xonix_Qt-Cpp/Xonix.pro ../../../../Qt/6.3.1/macos/mkspecs/macx-clan
 		../../../../Qt/6.3.1/macos/mkspecs/features/qt_config.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/macx-clang/qmake.conf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt/6.3.1/macos/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/mac/sdk.prf \
 		../../../../Qt/6.3.1/macos/mkspecs/features/toolchain.prf \
@@ -512,6 +520,7 @@ Makefile: ../Xonix_Qt-Cpp/Xonix.pro ../../../../Qt/6.3.1/macos/mkspecs/macx-clan
 ../../../../Qt/6.3.1/macos/mkspecs/features/qt_config.prf:
 ../../../../Qt/6.3.1/macos/mkspecs/macx-clang/qmake.conf:
 ../../../../Qt/6.3.1/macos/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt/6.3.1/macos/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt/6.3.1/macos/mkspecs/features/mac/sdk.prf:
 ../../../../Qt/6.3.1/macos/mkspecs/features/toolchain.prf:
@@ -575,8 +584,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../Xonix_Qt-Cpp/resource.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents ../Xonix_Qt-Cpp/enemy.h ../Xonix_Qt-Cpp/game.h ../Xonix_Qt-Cpp/gamescene.h ../Xonix_Qt-Cpp/view.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../Xonix_Qt-Cpp/game.cpp ../Xonix_Qt-Cpp/gamescene.cpp ../Xonix_Qt-Cpp/main.cpp ../Xonix_Qt-Cpp/view.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../Xonix_Qt-Cpp/enemy.h ../Xonix_Qt-Cpp/game.h ../Xonix_Qt-Cpp/gamescene.h ../Xonix_Qt-Cpp/menuscene.h ../Xonix_Qt-Cpp/view.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../Xonix_Qt-Cpp/game.cpp ../Xonix_Qt-Cpp/gamescene.cpp ../Xonix_Qt-Cpp/main.cpp ../Xonix_Qt-Cpp/menuscene.cpp ../Xonix_Qt-Cpp/view.cpp $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -586,6 +595,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r Xonix.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -614,9 +624,9 @@ qrc_resource.cpp: ../Xonix_Qt-Cpp/resource.qrc \
 		../Xonix_Qt-Cpp/images/active_tile.png
 	/Users/ottis/Qt/6.3.1/macos/libexec/rcc -name resource ../Xonix_Qt-Cpp/resource.qrc -o qrc_resource.cpp
 
-compiler_moc_header_make_all: moc_gamescene.cpp moc_view.cpp
+compiler_moc_header_make_all: moc_gamescene.cpp moc_menuscene.cpp moc_view.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_gamescene.cpp moc_view.cpp
+	-$(DEL_FILE) moc_gamescene.cpp moc_menuscene.cpp moc_view.cpp
 moc_gamescene.cpp: ../Xonix_Qt-Cpp/gamescene.h \
 		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
 		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
@@ -630,6 +640,14 @@ moc_gamescene.cpp: ../Xonix_Qt-Cpp/gamescene.h \
 		../../../../Qt/6.3.1/macos/lib/QtCore.framework/Headers/qglobal.h \
 		../../../../Qt/6.3.1/macos/libexec/moc
 	/Users/ottis/Qt/6.3.1/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=13 -D__clang_minor__=1 -D__clang_patchlevel__=6 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/ottis/Qt/6.3.1/macos/mkspecs/macx-clang -I/Users/ottis/university_3_1/qt_bulei/lab_1_2/Xonix_Qt-Cpp -I/Users/ottis/Qt/6.3.1/macos/lib/QtWidgets.framework/Headers -I/Users/ottis/Qt/6.3.1/macos/lib/QtGui.framework/Headers -I/Users/ottis/Qt/6.3.1/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/ottis/Qt/6.3.1/macos/lib ../Xonix_Qt-Cpp/gamescene.h -o moc_gamescene.cpp
+
+moc_menuscene.cpp: ../Xonix_Qt-Cpp/menuscene.h \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QPushButton \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qpushbutton.h \
+		../../../../Qt/6.3.1/macos/libexec/moc
+	/Users/ottis/Qt/6.3.1/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=13 -D__clang_minor__=1 -D__clang_patchlevel__=6 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/ottis/Qt/6.3.1/macos/mkspecs/macx-clang -I/Users/ottis/university_3_1/qt_bulei/lab_1_2/Xonix_Qt-Cpp -I/Users/ottis/Qt/6.3.1/macos/lib/QtWidgets.framework/Headers -I/Users/ottis/Qt/6.3.1/macos/lib/QtGui.framework/Headers -I/Users/ottis/Qt/6.3.1/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/ottis/Qt/6.3.1/macos/lib ../Xonix_Qt-Cpp/menuscene.h -o moc_menuscene.cpp
 
 moc_view.cpp: ../Xonix_Qt-Cpp/view.h \
 		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QGraphicsView \
@@ -692,6 +710,13 @@ main.o: ../Xonix_Qt-Cpp/main.cpp ../../../../Qt/6.3.1/macos/lib/QtWidgets.framew
 		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qgraphicsview.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Xonix_Qt-Cpp/main.cpp
 
+menuscene.o: ../Xonix_Qt-Cpp/menuscene.cpp ../Xonix_Qt-Cpp/menuscene.h \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QPushButton \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qpushbutton.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o menuscene.o ../Xonix_Qt-Cpp/menuscene.cpp
+
 view.o: ../Xonix_Qt-Cpp/view.cpp ../Xonix_Qt-Cpp/view.h \
 		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QGraphicsView \
 		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qgraphicsview.h \
@@ -706,6 +731,9 @@ view.o: ../Xonix_Qt-Cpp/view.cpp ../Xonix_Qt-Cpp/view.h \
 		../Xonix_Qt-Cpp/enemy.h \
 		../../../../Qt/6.3.1/macos/lib/QtCore.framework/Headers/QtGlobal \
 		../../../../Qt/6.3.1/macos/lib/QtCore.framework/Headers/qglobal.h \
+		../Xonix_Qt-Cpp/menuscene.h \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QPushButton \
+		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/qpushbutton.h \
 		../../../../Qt/6.3.1/macos/lib/QtGui.framework/Headers/QKeyEvent \
 		../../../../Qt/6.3.1/macos/lib/QtGui.framework/Headers/qevent.h \
 		../../../../Qt/6.3.1/macos/lib/QtWidgets.framework/Headers/QApplication \
@@ -717,6 +745,9 @@ qrc_resource.o: qrc_resource.cpp
 
 moc_gamescene.o: moc_gamescene.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_gamescene.o moc_gamescene.cpp
+
+moc_menuscene.o: moc_menuscene.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_menuscene.o moc_menuscene.cpp
 
 moc_view.o: moc_view.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_view.o moc_view.cpp
